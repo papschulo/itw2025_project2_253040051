@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/output.css" rel="stylesheet"> 
+    
+  <!-- AOS CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- SWIPER CSS -->
    <link
@@ -11,14 +14,14 @@
   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
 />
 </head>
-<body class="bg-body">
+<body class="bg-body overflow-x-hidden">
 
     <!-- header -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50">
         <div class="container-nav w-full">
             <div class="flex justify-between items-center">
                 <div class="px-7">
-                    <a href="#home" class="text-white font-bold py-6 block">WJASAEDIT</a>
+                    <a href="#home" class="text-white font-bold py-6 block hover:text-[#4A4A4A] duration-300">WJASAEDIT</a>
                 </div>
                 <div class="flex flex-row justify-between items-center px-5">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-5 lg:hidden">
@@ -29,11 +32,11 @@
 
                     <nav id="nav-menu" class="hidden absolute py-5 bg-red3 shadow-lg rounded-lg max-w-62.5 w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
-                            <li class="group"><a href="#home" class="text-base text-white py-2 mx-10 flex  group-hover:text-[#4A4A4A]">Home</a></li>
-                            <li class="group"><a href="#about" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A]">About</a></li class="group">
-                                <li class="group"><a href="#portfolio" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A]">Portfolio</a></li class="group">
-                            <li class="group"><a href="#services" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A]">Services</a></li class="group">
-                            <li class="group"><a href="#contact" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A]">Contact</a></li>
+                            <li class="group"><a href="#home" class="text-base text-white py-2 mx-10 flex  group-hover:text-[#4A4A4A] duration-300">Home</a></li>
+                            <li class="group"><a href="#about" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A] duration-300">About</a></li class="group">
+                                <li class="group"><a href="#portfolio" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A] duration-300">Portfolio</a></li class="group">
+                            <li class="group"><a href="#services" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A] duration-300">Services</a></li class="group">
+                            <li class="group"><a href="#contact" class="text-base text-white py-2 mx-10 flex group-hover:text-[#4A4A4A] duration-300">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -48,10 +51,10 @@
     <sectiion id="home">
         <main class="content py-30 lg:my-30 lg:flex justify-center">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-6 p-12 box-border lg:m-auto">
+                <div class="container-home w-full self-center px-6 p-12 box-border lg:m-auto">
                     <h1 class="font-figtree text-red text-4xl font-bold lg:text-6xl">Post More. <span class="text-red2">Edit Less.</span></h1>
-                    <p class="font-montserrat py-6 text-white text-md font-semibold text-justify lg:text-2xl">The secret weapon for consistent content creation. Professional editing services with lightning-fast turnaround.</p>
-                    <button class="bg-oldwhite font-montserrat font-bold hover:bg-[#bfbdbd] p-2 rounded-md transition duration-300 hover:scale-110 lg:text-2xl"><a href="#contact">View Services</a></button>
+                    <p class="font-montserrat py-10 text-white text-base font-semibold text-justify lg:text-2xl">The secret weapon for consistent content creation. Professional editing services with lightning-fast turnaround.</p>
+                    <a href="#contact" class="block w-40 p-2 rounded-md text-xl text-center font-semibold bg-white transition duration-300 ease-in-out hover:scale-110 hover:bg-[#868686] lg:text-3xl lg:w-60">View Services</a>
                 </div>
             </div>
         </main>
@@ -64,27 +67,27 @@
     <section id="about">
         <div class="container about flex self-center items-center justify-center pt-30 my-12 mx-auto">
             <div class="about lg:flex lg:flex-col">
-                <img src="img/wildan 14.png" alt="About Pic " class="w-109.75 rounded-xl border-red border-3 box-border mx-auto lg:mx-auto lg:w-200 lg:mt-20">
-                <p class="text-center font-montserrat pt-30 w-[60%] mx-auto text-white text-lg lg:text-2xl font-semibold lg:text-center">Post More. Edit Less. serves as your premier strategic partner, offering professional editing services meticulously designed to eliminate creative bottlenecks. We empower creators and brands to maintain an unwavering commitment to quality while accelerating their production cycle. By transforming raw footage into polished, high-impact assets with lightning-fast turnaround, we act as the ultimate secret weapon for those ready to dominate their niche through consistent, world-class content.</p>
+                <img src="img/wildan 14.png" alt="About Pic " class="w-109.75 rounded-xl border-red border-3 box-border mx-auto lg:mx-auto lg:w-200 lg:mt-20" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <p class="text-center font-montserrat pt-30 w-[60%] mx-auto text-white text-base lg:text-xl font-semibold lg:text-center" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">Post More. Edit Less. serves as your premier strategic partner, offering professional editing services meticulously designed to eliminate creative bottlenecks. We empower creators and brands to maintain an unwavering commitment to quality while accelerating their production cycle. By transforming raw footage into polished, high-impact assets with lightning-fast turnaround, we act as the ultimate secret weapon for those ready to dominate their niche through consistent, world-class content.</p>
                 <div class="container-value h-150 flex flex-col justify-center items-center">
-                    <ul class="flex flex-col justify-center items-center self-center mx-auto font-montserrat text-lg lg:flex-row lg:items-center lg:p-10 lg:w-[70%]">
+                    <ul class="flex flex-col justify-center items-center self-center mx-auto font-montserrat text-lg lg:flex-row lg:gap-20 lg:p-10 lg:w-[70%]" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
                         <li class="flex flex-col justify-center items-center text-white mb-8 lg:m-auto">
                             <!-- ACUTE SVG -->
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M600-160q-134 0-227-93t-93-227q0-134 93-227t227-93q134 0 227 93t93 227q0 134-93 227t-227 93Zm-.24-60Q708-220 784-295.76q76-75.77 76-184Q860-588 784.24-664q-75.77-76-184-76Q492-740 416-664.24q-76 75.77-76 184Q340-372 415.76-296q75.77 76 184 76ZM702-337l42-42-114-114v-147h-60v172l132 131ZM80-610v-60h160v60H80ZM40-450v-60h200v60H40Zm40 160v-60h160v60H80Zm520-190Z"/></svg>
-                            <h2 class="text-center my-3 lg:text-2xl">Speed</h2>
-                            <p class="text-center text-base">Each editing process is executed through an efficient workflow to ensure fast delivery without compromising quality.</p>
+                            <h2 class="text-center text-lg my-3 lg:text-2xl">Speed</h2>
+                            <p class="text-center text-sm lg:text-base">Each editing process is executed through an efficient workflow to ensure fast delivery without compromising quality.</p>
                         </li>
                         <li class="flex flex-col justify-center items-center text-white mb-8 lg:m-auto">
                             <!-- HQ SVG -->
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px"  viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M590-300h60v-60h30q17 0 28.5-11.5T720-400v-160q0-17-11.5-28.5T680-600H560q-17 0-28.5 11.5T520-560v160q0 17 11.5 28.5T560-360h30v60Zm-350-60h60v-80h80v80h60v-240h-60v100h-80v-100h-60v240Zm340-60v-120h80v120h-80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
-                            <h2 class="text-center my-3 lg:text-2xl">Quality</h2>
-                            <p class="text-center text-base">All outputs adhere to professional standards, maintaining consistency, accuracy, and alignment with brand communication goals.</p>
+                            <h2 class="text-center text-lg my-3 lg:text-2xl">Quality</h2>
+                            <p class="text-center text-sm lg:text-base">All outputs adhere to professional standards, maintaining consistency, accuracy, and alignment with brand communication goals.</p>
                         </li>
                         <li class="flex flex-col justify-center items-center text-white lg:m-auto">
                             <!-- RELIABILITY SVG -->
                             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/></svg>
-                            <h2 class="text-center my-3 lg:text-2xl">Reliability</h2>
-                            <p class="text-center text-base">A structured workflow, measurable timelines, and a strong commitment to punctuality and client trust.</p>
+                            <h2 class="text-center text-lg my-3 lg:text-2xl">Reliability</h2>
+                            <p class="text-center text-sm lg:text-base">A structured workflow, measurable timelines, and a strong commitment to punctuality and client trust.</p>
                         </li>
                     </ul>
                 </div>
@@ -98,17 +101,17 @@
 
     <!-- portfolio -->
         <section id="portfolio">
-            <h2 class="text-white text-center text-2xl pt-30 font-figtree font-bold">Behind every fast-growing account is a fast-working editor. Here's what we do behind the scenes.</h2>
+            <h2 class="text-white text-center text-lg pt-30 font-figtree font-bold lg:text-2xl " data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">Behind every fast-growing account is a fast-working editor. Here's what we do behind the scenes.</h2>
             <div class="container mx-auto lg:pt-20 lg:flex lg:justify-center">
-                <div class="swiper w-75 h-150 lg:flex">
+                <div class="swiper w-75 h-160 lg:flex" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
                     <div class="swiper-wrapper font-montserrat">
                         <div class="swiper-slide">
                             <a href="" class="flex items-center justify-center">
                             <img src="img/wildan 2.png" alt="wildan2" class="w-60 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 1</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg p-2 font-semibold lg:text-xl">Client 1</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -116,8 +119,8 @@
                             <img src="img/wildan 3.png" alt="wildan2" class="w-60 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 2</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg  p-2 font-semibold lg:text-xl">Client 2</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -125,8 +128,8 @@
                             <img src="img/wildan 4.png" alt="wildan2" class="w-60 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 3</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg  p-2 font-semibold lg:text-xl">Client 3</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                     </div>
@@ -135,15 +138,15 @@
 
                 <!-- SWIPER 2 FOR LANDSCAPE GALLERY -->
 
-                <div class="swiper w-90 h-120 mt-20">
+                <div class="swiper w-90 h-120 mt-20" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                     <div class="swiper-wrapper font-montserrat">
                         <div class="swiper-slide">
                             <a href="" class="flex items-center justify-center">
                             <img src="img/wildan 5.png" alt="wildan2" class="w-80 h-50 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 1</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 1</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -151,8 +154,8 @@
                             <img src="img/wildan 6.png" alt="wildan2" class="w-80 h-50  mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 2</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 2</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -160,8 +163,8 @@
                             <img src="img/wildan 7.png" alt="wildan2" class="w-80 h-50 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 3</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 3</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -169,8 +172,8 @@
                             <img src="img/wildan 8.png" alt="wildan2" class="w-80 h-50 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 4</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 4</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -178,8 +181,8 @@
                             <img src="img/wildan 9.png" alt="wildan2" class="w-80 h-50 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 5</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 5</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -187,8 +190,8 @@
                             <img src="img/wildan 10.png" alt="wildan2" class="w-80 h-50 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 6</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 6</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -196,8 +199,17 @@
                             <img src="img/wildan 11.png" alt="wildan2" class="w-80 h-50 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
                             </a>
                             <div class="text-center p-2.5 mt-5 text-white">
-                                    <h2 class="text-xl p-2 font-semibold">Client 7</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 7</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="flex items-center justify-center">
+                            <img src="img/wildan 15.png" alt="wildan2" class="w-80 h-50 mt-10 border-red border-4 rounded-2xl  transition duration-300 hover:scale-110">
+                            </a>
+                            <div class="text-center p-2.5 mt-5 text-white">
+                                    <h2 class="text-lg lg:text-xl p-2 font-semibold">Client 8</h2>
+                                    <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim?</p>
                             </div>
                         </div>
                     </div>
@@ -210,65 +222,69 @@
 
     <!-- services -->
      <section id="services">
-        <div class="services-container py-30 lg:flex lg:flex-row flex-wrap">
-            <div class="header-services lg:mx-auto">
-                <h2 class="text-white text-center font-figtree font-bold text-2xl mb-20 mx-auto w-60 lg:w-[60%]">Transform raw footage into industry-standard content that captivates the eye and locks in audience retention.</h2>
+        <div class="services-container py-30 lg:flex lg:flex-col">
+            <div class="header-services lg:mx-auto lg:w-full" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                <h2 class="text-white text-center font-figtree font-bold text-lg mb-20 mx-auto w-60 lg:w-full lg:flex lg:justify-center lg:text-2xl">Transform raw footage into industry-standard content that captivates the eye and locks in audience retention.</h2>
             </div>
-            <div class="services-content mx-auto bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg lg:mt-20">
-                <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="basic">BASIC</h2>
-                <ul class="list-decimal text-[16px] text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 1-2 minutes</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Text, Transitions, Background Music</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1x Free Revision</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1-2 Days Processing</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
-                </ul>
-                <h2 class="text-[30px] text-white font-bold font-figtree mt-2">30K</h2>
-                <a href="" class="mt-4 transition duration-300 hover:scale-110">
-                    <button type="button" class="bg-white text-black w-40 h-10 text cursor-pointer hover:bg-whitever duration-300 font-montserrat text-xl font-bold rounded-lg">Order</button>
-                </a>
+            <div class="services-basic lg:flex lg:mx-auto lg:gap-60" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
+                <div class="services-content mx-auto bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg lg:mt-20">
+                    <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="basic">BASIC</h2>
+                    <ul class="list-decimal text-sm text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 1-2 minutes</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Text, Transitions, Background Music</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1x Free Revision</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1-2 Days Processing</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
+                    </ul>
+                    <h2 class="text-[30px] text-white font-bold font-figtree mt-2">30K</h2>
+                    <a href="" class="w-30 p-2 mt-8 bg-white text-center text-lg font-semibold font-montserrat rounded-xl transition duration-300 hover:scale-110 hover:bg-[#868686]">
+                        Order
+                    </a>
+                </div>
+                <div class="services-content mx-auto mt-20 bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg">
+                    <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="basic+">BASIC +</h2>
+                    <ul class="list-decimal text-sm  text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 1-2 minutes</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Animation Effects, Text, Transitions, And So On</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2x Free Revision</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1-2 Days Processing</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
+                    </ul>
+                    <h2 class="text-[30px] text-white font-bold font-figtree mt-2">65K</h2>
+                    <a href="" class="w-30 p-2 mt-8 bg-white text-center text-lg font-semibold font-montserrat rounded-xl transition duration-300 hover:scale-110 hover:bg-[#868686]">
+                        Order
+                    </a>
+                </div>
             </div>
-            <div class="services-content mx-auto mt-20 bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg">
-                <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="basic+">BASIC +</h2>
-                <ul class="list-decimal text-[16px] text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 1-2 minutes</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Animation Effects, Text, Transitions, And So On</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2x Free Revision</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1-2 Days Processing</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
-                </ul>
-                <h2 class="text-[30px] text-white font-bold font-figtree mt-2">65K</h2>
-                <a href="" class="mt-4 transition duration-300 hover:scale-110">
-                    <button type="button" class="bg-white text-black w-40 h-10 text cursor-pointer hover:bg-whitever duration-300 font-montserrat text-xl font-bold rounded-lg">Order</button>
-                </a>
-            </div>
-            <div class="services-content mx-auto mt-20 bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg">
-                <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="standard">Standard</h2>
-                <ul class="list-decimal text-[16px] text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 3-5 minutes</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Text, Transitions, Background Music</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1x Free Revision</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2-4 Days Processing</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
-                </ul>
-                <h2 class="text-[30px] text-white font-bold font-figtree mt-2">80K</h2>
-                <a href="" class="mt-4 transition duration-300 hover:scale-110">
-                    <button type="button" class="bg-white text-black w-40 h-10 text cursor-pointer hover:bg-whitever duration-300 font-montserrat text-xl font-bold rounded-lg">Order</button>
-                </a>
-            </div>
-            <div class="services-content mx-auto mt-20 bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg">
-                <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="standard+">Standard +</h2>
-                <ul class="list-decimal text-[16px] text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 3-5 minutes</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Animation Effects, Text, Transitions, And So On</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2x Free Revision</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2-4 Days Processing</li>
-                    <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
-                </ul>
-                <h2 class="text-[30px] text-white font-bold font-figtree mt-2">100K</h2>
-                <a href="" class="mt-4 transition duration-300 hover:scale-110">
-                    <button type="button" class="bg-white text-black w-40 h-10 text cursor-pointer hover:bg-whitever duration-300 font-montserrat text-xl font-bold rounded-lg">Order</button>
-                </a>
+            <div class="services-standard lg:flex lg:mx-auto lg:gap-60" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
+                <div class="services-content mx-auto mt-20 bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg">
+                    <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="standard">Standard</h2>
+                    <ul class="list-decimal text-sm  text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 3-5 minutes</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Text, Transitions, Background Music</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">1x Free Revision</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2-4 Days Processing</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
+                    </ul>
+                    <h2 class="text-[30px] text-white font-bold font-figtree mt-2">80K</h2>
+                    <a href="" class="w-30 p-2 mt-8 bg-white text-center text-lg font-semibold font-montserrat rounded-xl transition duration-300 hover:scale-110 hover:bg-[#868686]">
+                        Order
+                    </a>
+                </div>
+                <div class="services-content mx-auto mt-20 bg-red2 w-100 h-140 bg-3 rounded-tr-3xl rounded-bl-3xl flex flex-col border-2 border-white justify-start items-center  shadow-lg">
+                    <h2 class="text-white text-[40px] font-bold font-figtree my-3" id="standard+">Standard +</h2>
+                    <ul class="list-decimal text-sm  text-justify flex flex-col text-white font-montserrat font-semibold w-[70%]">
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Duration 3-5 minutes</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">Animation Effects, Text, Transitions, And So On</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2x Free Revision</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">2-4 Days Processing</li>
+                        <li class="bg-red font-semibold rounded-xl p-2 my-2 border-2">HD files via Google Drive</li>
+                    </ul>
+                    <h2 class="text-[30px] text-white font-bold font-figtree mt-2">100K</h2>
+                    <a href="" class="w-30 p-2 mt-8 bg-white text-center text-lg font-semibold font-montserrat rounded-xl transition duration-300 hover:scale-110 hover:bg-[#868686]">
+                        Order
+                    </a>
+                </div>
             </div>
         </div>
      </section>
@@ -277,11 +293,11 @@
 
     <!-- contact  -->
      <section id="contact">
-        <div class="container-contact bg-red2 py-30 box-border flex flex-col items-center">
+        <div class="container-contact bg-red2 py-30 box-border flex flex-col items-center" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="2000">
             <h2 class="text-center text-white text-3xl mb-5 font-bold font-figtree">Take back your time to be creative.</h2>
             <p class="text-center text-white text-base font-semibold font-montserrat">Offload the editing burden to the professionals. You record, we polish.</p>
-            <a href="https://wa.me/6282152909223" class="m-auto">
-                <button type="button" class="mt-10 p-3 rounded-tl-xl rounded-br-xl bg-oldwhite hover:bg-whitever transition duration-300 delay-75 hover:scale-110 font-semibold text-xl font-montserrat">Start Posting More</button>
+            <a href="https://wa.me/6282152909223" class="m-auto mt-10 p-3 rounded-tl-xl rounded-br-xl bg-oldwhite hover:bg-[#868686] transition duration-300 hover:scale-110 font-semibold text-xl font-montserrat">
+                Start Posting More
             </a>
         </div>
      </section>
@@ -359,6 +375,21 @@
     <!-- footer end -->
 
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    
+    <!-- GSAP JS -->
+     <script src="js/gsap.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITIALIZE AOS  -->
+    <script>
+    AOS.init({
+        once:true
+    });
+    </script>
 
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
