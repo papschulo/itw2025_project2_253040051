@@ -35,3 +35,15 @@ window.onscroll = function() {
     nav.classList.remove('navbar-fixed');
   }
 }
+
+
+// contact
+const btnSend = document.querySelector('container-button')
+const alertText = document.querySelector('alert-text')
+
+// tombol kirim hilang text alert tampil 
+btnSend.addEventListener('click', function() {
+
+btnSend.classList.toggle('invisible');
+alertText.classList.toggle('invisble')
+});

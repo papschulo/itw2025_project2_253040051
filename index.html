@@ -304,10 +304,40 @@
 
     <!-- contact  -->
      <section id="contact">
-        <div class="container-contact bg-red2 py-30 box-border flex flex-col items-center" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="2000">
+        <div class="container-contact w-full bg-red2 py-50 flex flex-col justify-center items-center gap-3">
+            <h2 class="text-4xl text-white font-bold ">Contact Me</h2>
+            <div class="container-alert-text invisible">
+                <div class="alert-text bg-red3 p-3 text-white rounded-xl">
+                    <strong>Thank you</strong> your message has been sent.
+                </div>
+            </div>
+
+
+            <form action="" class="w-full p-8 mx-auto flex flex-col justify-center lg:w-full">
+                <div class="form-group bg-red3 p-2 text-white border-2 my-3 flex justify-start mx-auto w-100 lg:w-[90%] lg:mx-auto">
+                    <label for="Name" class="p-2 w-25">Name :</label>
+                    <input type="text" placeholder="Enter your full name" required class="w-[80%] lg:w-[90%] mx-auto">
+                </div>
+                <div class="form-group bg-red3 p-2 text-white border-2 my-3 flex justify-start mx-auto  w-100 lg:w-[90%] lg:mx-auto">
+                    <label for="gmail" class="p-2 w-25">Gmail :</label>
+                    <input type="text" placeholder="you@example.com" required class="w-[80%] lg:w-[90%] mx-auto">
+                </div>
+                <div class="form-group bg-red3 p-2 text-white flex justify-start mx-auto border-2 w-100 lg:w-[90%] lg:mx-auto">
+                    <label for="gmail" class="p-2 w-30">Message :</label>
+                    <textarea name="message" id="" class="w-full h-15 lg:w-full"></textarea>
+                </div>
+            
+                <div class="container-button mt-5 mx-auto">
+                    <button type="submit" class="bg-red w-40 h-10 rounded-2xl transition duration-300 hover:scale-105 hover:bg-red3 cursor-pointer">
+                        <span class="text-lg font-semibold">Send Message</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="container-contact bg-red2 py-30 mt-30 box-border flex flex-col items-center" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="2000">
             <h2 class="text-center text-white text-3xl mb-5 font-bold font-figtree">Take back your time to be creative.</h2>
             <p class="text-center text-white text-base font-semibold font-montserrat">Offload the editing burden to the professionals. You record, we polish.</p>
-            <a href="https://wa.me/6282152909223" class="m-auto mt-10 p-3 rounded-tl-xl rounded-br-xl bg-oldwhite hover:bg-[#868686] transition duration-300 hover:scale-110 font-semibold text-xl font-montserrat">
+            <a href="https://wa.me/6282152909223" target="_blank" class="m-auto mt-10 p-3 rounded-tl-xl rounded-br-xl bg-oldwhite hover:bg-[#868686] transition duration-300 hover:scale-110 font-semibold text-xl font-montserrat">
                 Start Posting More
             </a>
         </div>
